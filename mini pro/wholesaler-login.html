@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wholesaler Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background: url('./assests/image/background\ img.avif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .login-container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0; /* Remove unwanted space */
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      background-color: white;
+    }
+
+    .form-control::placeholder {
+      color: #aaa;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h4 class="text-center mb-4">Wholesaler Login</h4>
+      <form>
+        <div class="form-group">
+          <label for="whEmail">Email address</label>
+          <input type="email" class="form-control" id="whEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="whPassword">Password</label>
+          <input type="password" class="form-control" id="whPassword" placeholder="Enter your password">
+           <small class="form-text text-right mb-3">
+    <a href="forgot_password.html">Forgot Password?</a>
+  </small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-3">Login</button>
+        <small class="form-text text-muted text-center mt-2">
+              Already have an account? <a href="login.html">Login here</a>
+            </small>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

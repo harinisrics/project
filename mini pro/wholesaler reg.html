@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wholesaler Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      background: url("assests/image/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .registration-box {
+      background-color: rgba(255, 255, 255, 0.96);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .form-group i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #999;
+    }
+
+    .form-control {
+      padding-left: 35px;
+    }
+
+    .btn-primary {
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .company-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .company-footer {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
+  
+  <!-- Company Logo -->
+  <div class="text-center mb-3">
+    <img src="assests/image/logo.jpg" class="company-logo rounded-circle" alt="Company Logo">
+    <h4 class="mt-2 text-dark font-weight-bold">Garment Mart Pvt. Ltd.</h4>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="col-md-6 registration-box">
+    <h3 class="text-center mb-4"><i class="fas fa-user-tie text-primary mr-2"></i>Wholesaler Registration</h3>
+    
+    <form action="wholesaler_register_action.php" method="POST">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-building"></i>
+        <input type="text" name="company" class="form-control" placeholder="Company Name" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-file-invoice"></i>
+        <input type="text" name="gst" class="form-control" placeholder="GST Number" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" name="address" class="form-control" placeholder="Address" required>
+      </div>
+
+    
+      <button type="submit" class="btn btn-primary btn-block">Register</button>
+
+      <p class="text-center mt-3">Already registered? <a href="wholesaler_login.html">Login here</a></p>
+    </form>
+  </div>
+
+ 
+
+</div>
+
+</body>
+</html>

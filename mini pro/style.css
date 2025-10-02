@@ -1,0 +1,47 @@
+/* Icon hover styles */
+.list-inline-item a:hover {
+  color: rgb(255, 193, 7) !important; /* Yellow on hover */
+  text-decoration: none;
+}
+
+/* Icon sizing */
+.icon-small {
+  font-size: 14px;
+}
+
+/* Success button styles */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.carousel-item {
+  height: 50vh;  /* Full screen height */
+  color: rgb(229, 37, 40);
+}
+
+
+
+
+
+/* Product card styles */
+
+/* Footer links */
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}

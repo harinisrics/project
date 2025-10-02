@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      background-image: url('./assests/image/background\ img.avif');
+      background-size: cover;
+      background-position: center;
+    }
+    .form-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="col-md-8 mx-auto form-box">
+    <h3 class="text-center mb-4"> Product Details Form</h3>
+    <form action="add_product_action.py" method="POST" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" name="product_name" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label>Category</label>
+        <select class="form-control" name="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="Men">Men</option>
+          <option value="Women">Women</option>
+          <option value="Kids">Kids</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Material</label>
+        <select name="material" class="form-control" required>
+          <option value="">-- Select Material --</option>
+          <option value="Cotton">Cotton</option>
+          <option value="Silk">Silk</option>
+          <option value="Polyester">Polyester</option>
+          <option value="Wool">Wool</option>
+          <option value="Linen">Linen</option>
+          <option value="Denim">Denim</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Product Description</label>
+        <textarea name="description" class="form-control" rows="3" required></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>Price (₹)</label>
+          <input type="number" name="price" class="form-control" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Stock Quantity</label>
+          <input type="number" name="stock" class="form-control" required>
+        </div>
+      </div>
+<div class="form-group">
+  <label>Available Sizes</label><br>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="sizes[]" value="Free Size" id="sizeFree">
+    <label class="form-check-label" for="sizeFree">Free Size</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="sizes[]" value="S" id="sizeS">
+    <label class="form-check-label" for="sizeS">S</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="sizes[]" value="M" id="sizeM">
+    <label class="form-check-label" for="sizeM">M</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="sizes[]" value="L" id="sizeL">
+    <label class="form-check-label" for="sizeL">L</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="sizes[]" value="XL" id="sizeXL">
+    <label class="form-check-label" for="sizeXL">XL</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="sizes[]" value="XXL" id="sizeXXL">
+    <label class="form-check-label" for="sizeXXL">XXL</label>
+  </div>
+</div>
+
+      <div class="form-group">
+        <label>Upload Product Image</label>
+        <input type="file" name="product_image" class="form-control-file" required>
+      </div>
+
+      <button type="submit" class="btn btn-success btn-block">Add Product</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

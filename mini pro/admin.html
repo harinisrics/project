@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: url("assets/image/admin-bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+    .login-box {
+      margin-top: 100px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="col-md-4 login-box">
+    <h3 class="text-center mb-4">Admin Login</h3>
+    <form action="admin_login_action.py" method="POST">
+
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" id="username" placeholder="Enter admin username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Enter password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+
+      <p class="text-center mt-3">
+        <a href="forgot_password.html">Forgot Password?</a>
+      </p>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
